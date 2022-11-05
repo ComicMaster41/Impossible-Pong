@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1255532489565770113}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 2
-  m_TagString: Untagged
+  m_TagString: Player 2_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 6387851879801493970}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 4
-  m_TagString: Untagged
+  m_TagString: Player 2_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -271,7 +271,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: -5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 2493937262146373469}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 3
-  m_TagString: Untagged
+  m_TagString: Player 2_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -450,7 +450,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: -5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 7543717196741267886}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 1
-  m_TagString: Untagged
+  m_TagString: Player 2_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -595,7 +595,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

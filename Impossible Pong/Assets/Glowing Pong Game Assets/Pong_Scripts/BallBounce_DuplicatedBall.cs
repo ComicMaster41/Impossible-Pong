@@ -3,12 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallBounce : MonoBehaviour
-{
-    public GameObject hitSFX;
+public class BallBounce_DuplicatedBall : MonoBehaviour
+{    
     public GameObject ball_prefab;
-    public int ball_count = 0;
-
 
     public BallMovement ballMovement;
     public ScoreManager scoreManager;
@@ -16,10 +13,12 @@ public class BallBounce : MonoBehaviour
 
     private void Bounce(Collision2D collision)
     {
+        // set pos of ball, racket, and height of racket
         Vector3 ballPosition = transform.position;
         Vector3 racketPosition = collision.transform.position;
         float racketHeight = collision.collider.bounds.size.y;
 
+        // if touching player, set pos to 1, or -1
         float positionX;
         if (collision.gameObject.name == "Player 1")
         {
@@ -42,13 +41,6 @@ public class BallBounce : MonoBehaviour
         if (collision.gameObject.name == "Player 1" || collision.gameObject.name == "Player 2")
         {
             Bounce(collision);
-            if (ball_count <= 4)
-            {
-                InvokeRepeating("SpawnMultipleBalls", 1, 1);
-            }
-            else{
-                CancelInvoke("SpawnMultipleBalls");
-            }
         }
 
         else if (collision.gameObject.name == "Right Border")
@@ -64,12 +56,5 @@ public class BallBounce : MonoBehaviour
             ballMovement.player1Start = false;
             StartCoroutine(ballMovement.Launch());
         }
-
-        Instantiate(hitSFX, transform.position, transform.rotation);
-    }
-
-    void SpawnMultipleBalls(){
-        Instantiate(ball_prefab);
-        ball_count++;
     }
 }

@@ -2,69 +2,64 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PaddleSplit_Script : MonoBehaviour
+public class SplitPaddle_Script : MonoBehaviour
 {
     public GameObject split_paddle1;
     public GameObject split_paddle2;
-    public GameObject split_paddle3;
+    //public GameObject split_paddle3;
 
     public GameObject split_opponent_paddle1;
     public GameObject split_opponent_paddle2;
-    public GameObject split_opponent_paddle3;
-    //public override void Apply(GameObject target)
-    //{
-    //    void 
-
-    //    if (target.gameObject.CompareTag("Player 1"))
-    //    {
-
-    //        //Instantiate()
-    //    }
-    //}
+    //public GameObject split_opponent_paddle3;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // State w/out paddle split
+        // Pre-State
         if (collision.gameObject.CompareTag("Player 1"))
         {
             Destroy(collision.gameObject);
             Instantiate(split_paddle1);
+            //Destroy(gameObject);
+
         }
 
         else if (collision.gameObject.CompareTag("Player 2"))
         {
+            Debug.Log("Opponent Split");
             Destroy(collision.gameObject);
             Instantiate(split_opponent_paddle1);
+            //Destroy(gameObject);
         }
 
         // Primary State
 
-        if (collision.gameObject.CompareTag("Player 1_1"))
+        else if (collision.gameObject.CompareTag("Player 1_1"))
         {
-            Debug.Log("This works Player");
+            Debug.Log("Player split agaain");
             Destroy(collision.gameObject);
             Instantiate(split_paddle2);
         }
 
         else if (collision.gameObject.CompareTag("Player 2_1"))
         {
-            Debug.Log("This works Opponent");
+            Debug.Log("Opponent split agaain");
             Destroy(collision.gameObject);
             Instantiate(split_opponent_paddle2);
         }
 
-        // Secondary State
 
-        //if (collision.gameObject.CompareTag("Player 1_2"))
-        //{
-        //    Destroy(collision.gameObject);
-        //    Instantiate(split_paddle3);
-        //}
+        //Secondary State
 
-        //else if (collision.gameObject.CompareTag("Player 2_2"))
-        //{
-        //    Destroy(collision.gameObject);
-        //    Instantiate(split_opponent_paddle3);
-        //}
+        // else if (collision.gameObject.CompareTag("Player 1_2"))
+        // {
+        //     Destroy(collision.gameObject);
+        //     Instantiate(split_paddle3);
+        // }
+
+        // else if (collision.gameObject.CompareTag("Player 2_2"))
+        // {
+        //     Destroy(collision.gameObject);
+        //     Instantiate(split_opponent_paddle3);
+        // }
     }
 }
