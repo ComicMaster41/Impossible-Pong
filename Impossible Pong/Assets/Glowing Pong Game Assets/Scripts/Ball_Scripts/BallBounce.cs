@@ -3,22 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallBounce_DuplicatedBall : MonoBehaviour
-{    
-    public GameObject ball_prefab;
-
+public class BallBounce : MonoBehaviour
+{
+    public GameObject hitSFX;
     public BallMovement ballMovement;
     public ScoreManager scoreManager;
 
 
     private void Bounce(Collision2D collision)
     {
-        // set pos of ball, racket, and height of racket
         Vector3 ballPosition = transform.position;
         Vector3 racketPosition = collision.transform.position;
         float racketHeight = collision.collider.bounds.size.y;
 
-        // if touching player, set pos to 1, or -1
         float positionX;
         if (collision.gameObject.name == "Player 1")
         {
@@ -45,8 +42,11 @@ public class BallBounce_DuplicatedBall : MonoBehaviour
 
         else if (collision.gameObject.name == "Right Border")
         {
+            // grab goal function -- checks score and adds it to points
             scoreManager.Player1Goal();
+            // set ball movement on player to false
             ballMovement.player1Start = false;
+            // begin launch/reset function
             StartCoroutine(ballMovement.Launch());
         }
 
@@ -56,5 +56,7 @@ public class BallBounce_DuplicatedBall : MonoBehaviour
             ballMovement.player1Start = false;
             StartCoroutine(ballMovement.Launch());
         }
+
+        Instantiate(hitSFX, transform.position, transform.rotation);
     }
 }
