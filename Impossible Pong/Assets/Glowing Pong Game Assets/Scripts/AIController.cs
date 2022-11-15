@@ -8,7 +8,8 @@ public class AIController : MonoBehaviour
 
     [Range(0,1)]
     public float skill;
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
         Vector2 newPos = transform.position;
         newPos.y = Mathf.Lerp(transform.position.y, ball.position.y, skill);
         transform.position = newPos;

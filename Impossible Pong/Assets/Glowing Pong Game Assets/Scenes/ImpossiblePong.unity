@@ -807,6 +807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Opponent
       objectReference: {fileID: 0}
+    - target: {fileID: 7446555222485948000, guid: ec071dec39e3a4f5488bd1ba32785dbe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7446555222485948012, guid: ec071dec39e3a4f5488bd1ba32785dbe, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -977,7 +981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -251.50012, y: 26.997528}
+  m_AnchoredPosition: {x: -251.50012, y: 26.997559}
   m_SizeDelta: {x: 155, y: 49.845}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &554720611
@@ -1026,7 +1030,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1016130416}
         m_TargetAssemblyTypeName: MainMenu_Script, Assembly-CSharp
-        m_MethodName: ImpossibleScene
+        m_MethodName: Player2Activate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1473,7 +1477,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play pong
+  m_Text: Pong
 --- !u!222 &680943265
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1977,6 +1981,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
+--- !u!1 &896109910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2369213497470199470, guid: 3bf4e057437ff4507aefbe2f43dd789e, type: 3}
+  m_PrefabInstance: {fileID: 2369213498002159799}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &896109915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896109910}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f6161079894ba7bcff1b671e4d2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &909253288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,8 +2294,10 @@ MonoBehaviour:
   multiply_pong: {fileID: 909253288}
   size_pong: {fileID: 994068684}
   impossible_pong: {fileID: 27133827}
-  player2: {fileID: 0}
-  opponent: {fileID: 0}
+  player2: {fileID: 1742838441}
+  opponent: {fileID: 33877171}
+  player2_active: 0
+  opponent_active: 0
 --- !u!1 &1069838128
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,7 +3512,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1016130416}
         m_TargetAssemblyTypeName: MainMenu_Script, Assembly-CSharp
-        m_MethodName: ImpossibleScene
+        m_MethodName: OpponentActivate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4360,6 +4383,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 6201875}
   skill: 0.01
+--- !u!1 &1742838441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446555222485948000, guid: ec071dec39e3a4f5488bd1ba32785dbe, type: 3}
+  m_PrefabInstance: {fileID: 7446555221043741031}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1747867730
 GameObject:
   m_ObjectHideFlags: 0
@@ -4933,6 +4961,10 @@ PrefabInstance:
     - target: {fileID: 2369213497470199465, guid: 3bf4e057437ff4507aefbe2f43dd789e, type: 3}
       propertyPath: m_AngularDrag
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2369213497470199466, guid: 3bf4e057437ff4507aefbe2f43dd789e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2369213497470199468, guid: 3bf4e057437ff4507aefbe2f43dd789e, type: 3}
       propertyPath: m_RootOrder

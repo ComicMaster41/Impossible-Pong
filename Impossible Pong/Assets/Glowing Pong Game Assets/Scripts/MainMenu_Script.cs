@@ -25,12 +25,25 @@ public class MainMenu_Script : MonoBehaviour
     // opponent
     [SerializeField] GameObject opponent;
 
+    [SerializeField] bool player2_active = false;
+    [SerializeField] bool opponent_active = false;
+
     // Regular Pong
     public void PongScene()
     {
         canvas.GetComponent<Canvas>().enabled = false;
 
         pong_regular.SetActive(true);
+
+        if (player2_active == true)
+        {
+            player2.SetActive(true);
+        }
+
+        else if (opponent_active == true)
+        {
+            opponent.SetActive(true);
+        }
     }
 
     // Split Pong
@@ -39,6 +52,8 @@ public class MainMenu_Script : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
 
         split_pong.SetActive(true);
+
+
     }
 
     // Multiply Pong
@@ -47,6 +62,8 @@ public class MainMenu_Script : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
 
         multiply_pong.SetActive(true);
+
+ 
     }
 
     // Size Pong
@@ -55,6 +72,8 @@ public class MainMenu_Script : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
 
         size_pong.SetActive(true);
+
+
     }
 
     // Imposible Pong
@@ -63,28 +82,32 @@ public class MainMenu_Script : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
 
         impossible_pong.SetActive(true);
+
     }
 
 
     // enable/disaable the player or opponnet
 
-    public void Player2Enable()
+    public void Player2Activate()
     {
-        player2.SetActive(true);
+        player2_active = true;
+        Debug.Log("player 2 true and opponent false");
+        opponent_active = false;
+
     }
 
-    public void Player2Disable()
+    public void OpponentActivate()
     {
-        player2.SetActive(false);
+        opponent_active = true;
+        Debug.Log("opponent true and player 2 false");
+        player2_active = false;
+
     }
 
-    public void OpponentEnable()
-    {
-        opponent.SetActive(false);
-    }
 
-    public void OpponentDisable()
+
+    public bool OpponentActive()
     {
-        opponent.SetActive(false);
+        return opponent_active = true;
     }
 }
