@@ -21,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5461987707667212727
 Transform:
   m_ObjectHideFlags: 0
@@ -169,3 +169,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player_1: {fileID: 0}
   player_2: {fileID: 0}
+  opponent: {fileID: 0}

@@ -18,15 +18,11 @@ public class MainMenu_Script : MonoBehaviour
     // Impossible
     [SerializeField] GameObject impossible_pong;
 
-    // grabbing the player 2 and opponent gameobjects
+    public ActivationScript p2_opp_act;
 
-    // player 2
-    [SerializeField] GameObject player2;
-    // opponent
-    [SerializeField] GameObject opponent;
+    //public bool player2_active = false;
+    //public bool opponent_active = false;
 
-    [SerializeField] bool player2_active = false;
-    [SerializeField] bool opponent_active = false;
 
     // Regular Pong
     public void PongScene()
@@ -35,15 +31,10 @@ public class MainMenu_Script : MonoBehaviour
 
         pong_regular.SetActive(true);
 
-        if (player2_active == true)
-        {
-            player2.SetActive(true);
-        }
+        //p2_opp_act.P2_Opponent_Activation();
 
-        else if (opponent_active == true)
-        {
-            opponent.SetActive(true);
-        }
+        //activationScript.P2_Opponent_Activation();
+
     }
 
     // Split Pong
@@ -53,6 +44,7 @@ public class MainMenu_Script : MonoBehaviour
 
         split_pong.SetActive(true);
 
+        //activationScript.P2_Opponent_Activation();
 
     }
 
@@ -63,7 +55,8 @@ public class MainMenu_Script : MonoBehaviour
 
         multiply_pong.SetActive(true);
 
- 
+        //activationScript.P2_Opponent_Activation();
+
     }
 
     // Size Pong
@@ -73,6 +66,7 @@ public class MainMenu_Script : MonoBehaviour
 
         size_pong.SetActive(true);
 
+        //activationScript.P2_Opponent_Activation();
 
     }
 
@@ -83,6 +77,8 @@ public class MainMenu_Script : MonoBehaviour
 
         impossible_pong.SetActive(true);
 
+        //activationScript.P2_Opponent_Activation();
+
     }
 
 
@@ -90,24 +86,17 @@ public class MainMenu_Script : MonoBehaviour
 
     public void Player2Activate()
     {
-        player2_active = true;
-        Debug.Log("player 2 true and opponent false");
-        opponent_active = false;
+        p2_opp_act.player2_active = true;
+        //Debug.Log("player 2 true and opponent false");
+        p2_opp_act.opponent_active = false;
 
     }
 
     public void OpponentActivate()
     {
-        opponent_active = true;
-        Debug.Log("opponent true and player 2 false");
-        player2_active = false;
+        p2_opp_act.opponent_active = true;
+        //Debug.Log("opponent true and player 2 false");
+        p2_opp_act.player2_active = false;
 
-    }
-
-
-
-    public bool OpponentActive()
-    {
-        return opponent_active = true;
     }
 }
