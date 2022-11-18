@@ -22,13 +22,9 @@ public class ActivationScript : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Update");
         if (player2_active == true)
         {
             player2.SetActive(true);
-
-            Debug.Log("Working!!!");
-            //Instantiate(player2);
             opponent.SetActive(false);
         }
 

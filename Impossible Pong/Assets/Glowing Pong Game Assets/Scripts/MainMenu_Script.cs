@@ -18,7 +18,13 @@ public class MainMenu_Script : MonoBehaviour
     // Impossible
     [SerializeField] GameObject impossible_pong;
 
-    public ActivationScript p2_opp_act;
+    // vars that grab the act script on the game mode
+
+    public ActivationScript reg_p2_opp_act;
+    public ActivationScript split_p2_opp_act;
+    public ActivationScript multiply_p2_opp_act;
+    public ActivationScript impossible_p2_opp_act;
+    public ActivationScript size_p2_opp_act;
 
     //public bool player2_active = false;
     //public bool opponent_active = false;
@@ -30,11 +36,6 @@ public class MainMenu_Script : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
 
         pong_regular.SetActive(true);
-
-        //p2_opp_act.P2_Opponent_Activation();
-
-        //activationScript.P2_Opponent_Activation();
-
     }
 
     // Split Pong
@@ -43,9 +44,6 @@ public class MainMenu_Script : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
 
         split_pong.SetActive(true);
-
-        //activationScript.P2_Opponent_Activation();
-
     }
 
     // Multiply Pong
@@ -54,9 +52,6 @@ public class MainMenu_Script : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
 
         multiply_pong.SetActive(true);
-
-        //activationScript.P2_Opponent_Activation();
-
     }
 
     // Size Pong
@@ -65,9 +60,6 @@ public class MainMenu_Script : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
 
         size_pong.SetActive(true);
-
-        //activationScript.P2_Opponent_Activation();
-
     }
 
     // Imposible Pong
@@ -76,27 +68,51 @@ public class MainMenu_Script : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
 
         impossible_pong.SetActive(true);
-
-        //activationScript.P2_Opponent_Activation();
-
     }
 
+    public void ExitButton()
+    {
+        canvas.GetComponent<Canvas>().enabled = true;
 
-    // enable/disaable the player or opponnet
+        //impossible_pong.SetActive(true);
+    }
+
+    // enable/disaable the player or opponnet based on button click
 
     public void Player2Activate()
     {
-        p2_opp_act.player2_active = true;
-        //Debug.Log("player 2 true and opponent false");
-        p2_opp_act.opponent_active = false;
+        reg_p2_opp_act.player2_active = true;
+        reg_p2_opp_act.opponent_active = false;
+
+        split_p2_opp_act.player2_active = true;
+        split_p2_opp_act.opponent_active = false;
+
+        multiply_p2_opp_act.player2_active = true;
+        multiply_p2_opp_act.opponent_active = false;
+
+        impossible_p2_opp_act.player2_active = true;
+        impossible_p2_opp_act.opponent_active = false;
+
+        size_p2_opp_act.player2_active = true;
+        size_p2_opp_act.opponent_active = false;
 
     }
 
     public void OpponentActivate()
     {
-        p2_opp_act.opponent_active = true;
-        //Debug.Log("opponent true and player 2 false");
-        p2_opp_act.player2_active = false;
+        reg_p2_opp_act.opponent_active = true;
+        reg_p2_opp_act.player2_active = false;
 
+        split_p2_opp_act.opponent_active = true;
+        split_p2_opp_act.player2_active = false;
+
+        size_p2_opp_act.player2_active = false;
+        size_p2_opp_act.opponent_active = true;
+
+        impossible_p2_opp_act.opponent_active = true;
+        impossible_p2_opp_act.player2_active = false;
+
+        multiply_p2_opp_act.opponent_active = true;
+        multiply_p2_opp_act.player2_active = false;
     }
 }
