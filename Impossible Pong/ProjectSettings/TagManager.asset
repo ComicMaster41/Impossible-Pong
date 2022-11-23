@@ -12,6 +12,8 @@ TagManager:
   - Player 2_1
   - Player 1_2
   - Player 2_2
+  - Right Border
+  - Left Border
   layers:
   - Default
   - TransparentFX

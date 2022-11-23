@@ -10,14 +10,16 @@ public class SplitPaddle_Script : MonoBehaviour
     //public GameObject split_paddle3;
 
     public GameObject pre_state_opponent;
+    public SpriteRenderer pre_state_opponent_renderer;
     public GameObject split_opponent_paddle1;
     public GameObject split_opponent_paddle2;
     //public GameObject split_opponent_paddle3;
 
     private void Start()
     {
+        pre_state_opponent_renderer.GetComponent<SpriteRenderer>();
+
         pre_state_paddle.SetActive(true);
-        pre_state_opponent.SetActive(true);
 
         split_paddle1.SetActive(false);
         split_opponent_paddle1.SetActive(false);
@@ -31,11 +33,6 @@ public class SplitPaddle_Script : MonoBehaviour
         // Pre-State
         if (collision.gameObject.CompareTag("Player 1"))
         {
-            //Destroy(collision.gameObject);
-            //Instantiate(split_paddle1);
-
-            //Destroy(gameObject);
-
             // if ball touches player 1 --> set player inaactive
             // and set next player to active
 
@@ -46,41 +43,62 @@ public class SplitPaddle_Script : MonoBehaviour
 
         else if (collision.gameObject.CompareTag("Player 2"))
         {
-            //Debug.Log("Opponent Split");
-            //Destroy(collision.gameObject);
-            //Instantiate(split_opponent_paddle1);
-            //Destroy(gameObject);
-
             // if ball touches P2 --> set opponent to inactive
             // and set next opponent to active
 
-            pre_state_opponent.SetActive(false);
+            pre_state_opponent_renderer.enabled = false;
             split_opponent_paddle1.SetActive(true);
-            Debug.Log("opponent got to the first state");
-
         }
 
         // Primary State
 
         else if (collision.gameObject.CompareTag("Player 1_1"))
         {
-            //Debug.Log("Player split agaain");
-            //Destroy(collision.gameObject);
-            //Instantiate(split_paddle2);
-
             split_paddle1.SetActive(false);
             split_paddle2.SetActive(true);
         }
 
         else if (collision.gameObject.CompareTag("Player 2_1"))
         {
-            //Debug.Log("Opponent split agaain");
-            //Destroy(collision.gameObject);
-            //Instantiate(split_opponent_paddle2);
-
             split_opponent_paddle1.SetActive(false);
             split_opponent_paddle2.SetActive(true);
-            Debug.Log("opponent got to the second state");
+        }
+
+        // now if it is touching the goal post
+
+        else if (collision.gameObject.CompareTag("Right Border") && split_paddle1.activeSelf)
+        {
+            // if player scores a point --> put them back a state
+
+            Debug.Log("this new code works");
+            split_paddle1.SetActive(false);
+            pre_state_paddle.SetActive(true);
+        }
+
+        else if (collision.gameObject.CompareTag("Right Border") && split_paddle2.activeSelf)
+        {
+
+            // if player scores a point --> put them back a state
+
+            Debug.Log("this new code works");
+            split_paddle2.SetActive(false);
+            split_paddle1.SetActive(true);
+        }
+
+        else if (collision.gameObject.CompareTag("Left Border") && split_opponent_paddle1.activeSelf)
+        {
+            // if player scores a point --> put them back a state
+
+            Debug.Log("this new code works");
+            split_opponent_paddle1.SetActive(false);
+            pre_state_opponent_renderer.enabled = true;
+        }
+
+        else if (collision.gameObject.CompareTag("Left Border") && split_opponent_paddle2.activeSelf)
+        {
+            // if player scores a point --> put them back a state
+            split_opponent_paddle2.SetActive(false);
+            split_opponent_paddle1.SetActive(true);
         }
     }
 }
