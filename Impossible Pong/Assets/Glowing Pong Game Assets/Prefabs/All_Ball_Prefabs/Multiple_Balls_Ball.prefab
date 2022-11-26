@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -4211402162520221450}
   m_Layer: 0
   m_Name: Multiple_Balls_Ball
-  m_TagString: Untagged
+  m_TagString: Duplicated_Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,4 +153,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball_prefab: {fileID: 8383717100846531516}
   ballMovement: {fileID: 8383717100846531513}
-  ball_count: 0
+  ball_increase_amount: 2
+  ball_increase_time: 3
