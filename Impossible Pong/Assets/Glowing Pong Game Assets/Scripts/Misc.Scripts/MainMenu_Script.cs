@@ -26,8 +26,6 @@ public class MainMenu_Script : MonoBehaviour
     public ActivationScript impossible_p2_opp_act;
     public ActivationScript size_p2_opp_act;
 
-    //public bool player2_active = false;
-    //public bool opponent_active = false;
 
 
     // Regular Pong
@@ -68,13 +66,6 @@ public class MainMenu_Script : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
 
         impossible_pong.SetActive(true);
-    }
-
-    public void ExitButton()
-    {
-        canvas.GetComponent<Canvas>().enabled = true;
-
-        //impossible_pong.SetActive(true);
     }
 
     // enable/disaable the player or opponnet based on button click

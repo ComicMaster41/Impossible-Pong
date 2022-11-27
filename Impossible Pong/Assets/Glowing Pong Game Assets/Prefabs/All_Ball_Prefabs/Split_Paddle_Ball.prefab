@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitSFX: {fileID: 6607022833018705886, guid: 64aecb3facb4f4c119e857f74e76d88d, type: 3}
   ballMovement: {fileID: 8792109680042102111}
-  scoreManager: {fileID: 7754672450482414429, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
+  scoreManager: {fileID: 0}
 --- !u!114 &-2273729164867565963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ceb816d71b5347dda11455299bd1339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  split_paddle1: {fileID: 7289886001670657205, guid: 510c3e0f2056c492bab0d5ae36a747ef, type: 3}
-  split_paddle2: {fileID: 546284693003472462, guid: 87ff094ff5f494ca5bb3ad2777a12288, type: 3}
-  split_opponent_paddle1: {fileID: 1723385148589470404, guid: 93378276022f94160bffc49cc3658683, type: 3}
-  split_opponent_paddle2: {fileID: 4556257939775929604, guid: 1f3bb7012bde74bb983013e930f3b33d, type: 3}
+  pre_state_paddle: {fileID: 0}
+  split_paddle1: {fileID: 0}
+  split_paddle2: {fileID: 0}
+  pre_state_opponent: {fileID: 0}
+  pre_state_opponent_renderer: {fileID: 0}
+  split_opponent_paddle1: {fileID: 0}
+  split_opponent_paddle2: {fileID: 0}

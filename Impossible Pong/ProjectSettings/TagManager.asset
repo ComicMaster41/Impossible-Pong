@@ -14,6 +14,10 @@ TagManager:
   - Player 2_2
   - Right Border
   - Left Border
+  - Duplicated_Ball
+  - Split_Opponent
+  - Opponent_1
+  - Opponent_2
   layers:
   - Default
   - TransparentFX

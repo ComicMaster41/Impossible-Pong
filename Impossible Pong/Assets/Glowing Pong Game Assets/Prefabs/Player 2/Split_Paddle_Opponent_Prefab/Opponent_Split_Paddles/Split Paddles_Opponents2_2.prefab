@@ -300,7 +300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 579346103423139706}
   m_Layer: 0
-  m_Name: Split Paddles_Opponents2
+  m_Name: Split Paddles_Opponents2_2
   m_TagString: Player 2_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

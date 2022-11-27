@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         ResetPosition();
     }
 
-    private void ResetPosition()
+    public void ResetPosition()
     {
         ball.GetComponent<Ball_Script>().Reset();
         playerPaddle.GetComponent<Paddle_Script>().Reset();
