@@ -11,7 +11,7 @@ public class Size_Paddle_Script : MonoBehaviour
     void Start()
     {
         player_1 = GameObject.Find("Player 1").GetComponent<Transform>();
-        player_2 = GameObject.Find("Player 2").GetComponent<Transform>();
+        player_2 = GameObject.Find("Player 2_Split").GetComponent<Transform>();
 
         opponent = GameObject.Find("Opponent").GetComponent<Transform>();
     }
@@ -20,7 +20,7 @@ public class Size_Paddle_Script : MonoBehaviour
         if (collision.gameObject.name == "Right Border")
         {
             StartCoroutine(Increase_Paddle_Player2());
-            Debug.Log("Opponent shrunk");
+            StartCoroutine(Increase_Paddle_Opponent());
             StartCoroutine(Decrease_Paddle_Player1());
 
         }
@@ -28,9 +28,8 @@ public class Size_Paddle_Script : MonoBehaviour
         else if (collision.gameObject.name == "Left Border")
         {
             StartCoroutine(Increase_Paddle_Player1());
-            Debug.Log("Player shrunk");
             StartCoroutine(Decrease_Paddle_Player2());
-
+            StartCoroutine(Decrease_Paddle_Opponent());
         }
     }
 
@@ -51,6 +50,16 @@ public class Size_Paddle_Script : MonoBehaviour
 
     }
 
+    public IEnumerator Increase_Paddle_Opponent()
+    {
+        // OLS grabs the origional scale of the object
+        Vector3 originalLocalScale = opponent.transform.localScale;
+        // scale of object is added with a new vector 3
+        opponent.transform.localScale += new Vector3(-0.2F, -0.2f, 0);
+        yield return new WaitForSeconds(0);
+
+    }
+
     public IEnumerator Decrease_Paddle_Player1(){
         // OLS grabs the origional scale of the object
         Vector3 originalLocalScale = player_1.transform.localScale;
@@ -61,6 +70,13 @@ public class Size_Paddle_Script : MonoBehaviour
 
     public IEnumerator Decrease_Paddle_Player2(){
         player_2.transform.localScale += new Vector3(0.2F, 0.2f, 0);
+        yield return new WaitForSeconds(0);
+
+    }
+
+    public IEnumerator Decrease_Paddle_Opponent()
+    {
+        opponent.transform.localScale += new Vector3(0.2F, 0.2f, 0);
         yield return new WaitForSeconds(0);
 
     }

@@ -26,7 +26,6 @@ public class Ball_Spawn_Script : MonoBehaviour
         // check how many balls are in the game --> shoot a message in console
         //ball_holder = GameObject.FindGameObjectsWithTag("Duplicated_Ball");
         ball_count++;
-        Debug.Log("There are " + ball_count + " in game");
     }
 
 
@@ -36,8 +35,6 @@ public class Ball_Spawn_Script : MonoBehaviour
         {
         // if ball_count is greater than ball_limiter --> spawn
             InvokeRepeating("SpawnMultipleBalls", 1.0f, 1.0f);
-            Debug.Log("Ball are being spawned");
-
 
             ballMovement.player1Start = false;
             // begin launch/reset function
@@ -55,11 +52,9 @@ public class Ball_Spawn_Script : MonoBehaviour
             Instantiate(ball_prefab);
             ball_count++;
             // displays to the console how many balls are in the game --> keeps getting bigger
-            Debug.Log("There are " + ball_count + " in game");
         }
         else
         {
-            Debug.Log("balls are being limited");
             CancelInvoke("SpawnMultipleBalls");
         }
     }

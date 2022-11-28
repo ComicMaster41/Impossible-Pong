@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1255532489565770114}
   - component: {fileID: 1255532489565770112}
   - component: {fileID: 1255532489565770118}
-  - component: {fileID: 1255532489565770113}
+  - component: {fileID: 1847124362}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 2
-  m_TagString: Player 2_2
+  m_TagString: Opponent_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6e1450312bd514179a1e81802ecd432d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.07058824, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -119,20 +119,20 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255532489565770125}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 5
---- !u!114 &1255532489565770113
+--- !u!114 &1847124362
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,10 +141,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1255532489565770125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0b4a3c298f9c448eb38724b0dadbdfd, type: 3}
+  m_Script: {fileID: 11500000, guid: 7db8bbad1ed5e42ce8cba71b67f5e0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racketSpeed: -7
+  ball: {fileID: 0}
+  skill: 0.15
 --- !u!1 &1486437448353838852
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,10 +158,10 @@ GameObject:
   - component: {fileID: 3540731240968272570}
   - component: {fileID: 2755567407954890019}
   - component: {fileID: 1288688148468986087}
-  - component: {fileID: 6387851879801493970}
+  - component: {fileID: 1847124360}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 4
-  m_TagString: Player 2_2
+  m_TagString: Opponent_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,7 +221,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6e1450312bd514179a1e81802ecd432d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.07058824, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -264,20 +265,20 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486437448353838852}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: -5
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 5
---- !u!114 &6387851879801493970
+--- !u!114 &1847124360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,10 +287,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1486437448353838852}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0b4a3c298f9c448eb38724b0dadbdfd, type: 3}
+  m_Script: {fileID: 11500000, guid: 7db8bbad1ed5e42ce8cba71b67f5e0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racketSpeed: -7
+  ball: {fileID: 0}
+  skill: 0.15
 --- !u!1 &4556257939775929604
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +303,7 @@ GameObject:
   - component: {fileID: 579346103423139706}
   m_Layer: 0
   m_Name: Split Paddles_Opponents2_2
-  m_TagString: Player 2_2
+  m_TagString: Opponent_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,10 +338,10 @@ GameObject:
   - component: {fileID: 6124525760209199675}
   - component: {fileID: 1111734096701346262}
   - component: {fileID: 8047972948687039862}
-  - component: {fileID: 2493937262146373469}
+  - component: {fileID: 1847124361}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 3
-  m_TagString: Player 2_2
+  m_TagString: Opponent_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -399,7 +401,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6e1450312bd514179a1e81802ecd432d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.07058824, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -443,20 +445,20 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7494156581928661150}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: -5
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 5
---- !u!114 &2493937262146373469
+--- !u!114 &1847124361
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -465,10 +467,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7494156581928661150}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0b4a3c298f9c448eb38724b0dadbdfd, type: 3}
+  m_Script: {fileID: 11500000, guid: 7db8bbad1ed5e42ce8cba71b67f5e0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racketSpeed: 7
+  ball: {fileID: 0}
+  skill: 0.15
 --- !u!1 &7543717196741267874
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,10 +484,10 @@ GameObject:
   - component: {fileID: 7543717196741267885}
   - component: {fileID: 7543717196741267887}
   - component: {fileID: 7543717196741267881}
-  - component: {fileID: 7543717196741267886}
+  - component: {fileID: 1847124363}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 1
-  m_TagString: Player 2_2
+  m_TagString: Opponent_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -544,7 +547,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6e1450312bd514179a1e81802ecd432d, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.07058824, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -588,20 +591,20 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7543717196741267874}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 5
---- !u!114 &7543717196741267886
+--- !u!114 &1847124363
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -610,7 +613,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7543717196741267874}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0b4a3c298f9c448eb38724b0dadbdfd, type: 3}
+  m_Script: {fileID: 11500000, guid: 7db8bbad1ed5e42ce8cba71b67f5e0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racketSpeed: 7
+  ball: {fileID: 0}
+  skill: 0.15

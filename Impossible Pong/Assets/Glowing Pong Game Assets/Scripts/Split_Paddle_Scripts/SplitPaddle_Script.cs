@@ -10,6 +10,7 @@ public class SplitPaddle_Script : MonoBehaviour
 
     public GameObject pre_state_p2;
     public SpriteRenderer pre_state_p2_renderer;
+    public BoxCollider2D pre_state_p2_collider;
     public GameObject split_p2_paddle1;
     public GameObject split_p2_paddle2;
 
@@ -23,6 +24,7 @@ public class SplitPaddle_Script : MonoBehaviour
         // grabs renderer of both the player 2 and opponent
         pre_state_p2_renderer.GetComponent<SpriteRenderer>();
         pre_state_opponent_renderer.GetComponent<SpriteRenderer>();
+        pre_state_p2_collider.GetComponent<BoxCollider2D>();
 
 
         // enable the player
@@ -58,6 +60,7 @@ public class SplitPaddle_Script : MonoBehaviour
             // and set next opponent to active
 
             pre_state_p2_renderer.enabled = false;
+            pre_state_p2_collider.enabled = false;
             split_p2_paddle1.SetActive(true);
         }
 
@@ -67,6 +70,7 @@ public class SplitPaddle_Script : MonoBehaviour
             // and set next opponent to active
 
             pre_state_opponent_renderer.enabled = false;
+            pre_state_p2_collider.enabled = false;
             split_opponent_paddle1.SetActive(true);
         }
 
@@ -75,7 +79,6 @@ public class SplitPaddle_Script : MonoBehaviour
         else if (collision.gameObject.CompareTag("Opponent_1"))
         {
             //&& activationScript.opponent_active == true
-            Debug.Log("This executed");
             split_opponent_paddle1.SetActive(false);
             split_opponent_paddle2.SetActive(true);
         }
@@ -126,6 +129,7 @@ public class SplitPaddle_Script : MonoBehaviour
 
             split_p2_paddle1.SetActive(false);
             pre_state_p2_renderer.enabled = true;
+            pre_state_p2_collider.enabled = true;
         }
 
         else if (collision.gameObject.CompareTag("Left Border") && split_p2_paddle2.activeSelf)
@@ -141,6 +145,7 @@ public class SplitPaddle_Script : MonoBehaviour
 
             split_opponent_paddle1.SetActive(false);
             pre_state_opponent_renderer.enabled = true;
+            pre_state_p2_collider.enabled = true;
         }
 
         else if (collision.gameObject.CompareTag("Left Border") && split_opponent_paddle2.activeSelf)
