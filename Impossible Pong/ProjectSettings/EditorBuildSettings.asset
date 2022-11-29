@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Glowing Pong Game Assets/Scenes/ImpossiblePong.unity
     guid: 00189b194b3b34bab8f3a20b94a6a2bf
   - enabled: 1
+    path: Assets/Glowing Pong Game Assets/Scenes/ImpossiblePong 1.unity
+    guid: 45a3fa745f6284bba979c46e5a06c991
+  - enabled: 1
     path: Assets/Glowing Pong Game Assets/Scenes/GameOver.unity
     guid: 73016e885cd78499a9451950dd8a1433
   m_configObjects: {}
