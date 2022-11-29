@@ -1,2 +1,2 @@
-# Impossible-Ponh
+# Impossible-Pong
 impossible pong game
