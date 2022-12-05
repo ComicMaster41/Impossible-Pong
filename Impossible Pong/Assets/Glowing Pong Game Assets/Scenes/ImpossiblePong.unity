@@ -185,7 +185,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7446555222485948000, guid: 197d6055e3ea94a5b86b7e1b96340b7a, type: 3}
       propertyPath: m_Name
-      value: Player 2_Split
+      value: Player_2_Size
+      objectReference: {fileID: 0}
+    - target: {fileID: 7446555222485948000, guid: 197d6055e3ea94a5b86b7e1b96340b7a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7446555222485948014, guid: 197d6055e3ea94a5b86b7e1b96340b7a, type: 3}
       propertyPath: m_RootOrder
@@ -655,6 +659,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84870766}
   m_CullTransparentMesh: 1
+--- !u!114 &167160881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7754672450482414429, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
+  m_PrefabInstance: {fileID: 567187717}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61918b105ad6945d9a2e57e7e2fc0068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &178793325
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +896,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226206191}
   m_CullTransparentMesh: 1
+--- !u!114 &232156569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1925804238864247881, guid: 3ab80235d66bc4ee78d768796621e137, type: 3}
+  m_PrefabInstance: {fileID: 1689139396}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &245629547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,6 +2097,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9468057
       objectReference: {fileID: 0}
+    - target: {fileID: 7754672448695168814, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
+      propertyPath: m_TagString
+      value: Left Border
+      objectReference: {fileID: 0}
     - target: {fileID: 7754672448909304392, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -2082,6 +2112,10 @@ PrefabInstance:
     - target: {fileID: 7754672448909304392, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
       propertyPath: m_Color.r
       value: 0.9468057
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754672448909304394, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
+      propertyPath: m_TagString
+      value: Right Border
       objectReference: {fileID: 0}
     - target: {fileID: 7754672449552517449, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
       propertyPath: m_Color.b
@@ -3626,7 +3660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1016130412
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3908,7 +3942,7 @@ PrefabInstance:
     - target: {fileID: 8792109680042102108, guid: 34379d4f269f64d45a24612f17e92643, type: 3}
       propertyPath: scoreManager
       value: 
-      objectReference: {fileID: 1336152504}
+      objectReference: {fileID: 167160881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34379d4f269f64d45a24612f17e92643, type: 3}
 --- !u!1 &1069838128
@@ -4065,6 +4099,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071373753}
   m_CullTransparentMesh: 1
+--- !u!114 &1087670015 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1925804238294098067, guid: 3ab80235d66bc4ee78d768796621e137, type: 3}
+  m_PrefabInstance: {fileID: 1689139396}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1120160479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4334,7 +4379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1151528390
 Transform:
   m_ObjectHideFlags: 0
@@ -5703,11 +5748,11 @@ PrefabInstance:
     - target: {fileID: 7754672450482414429, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
       propertyPath: player1ScoreText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1087670015}
     - target: {fileID: 7754672450482414429, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
       propertyPath: player2ScoreText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 232156569}
     - target: {fileID: 7754672450482414430, guid: dc639e9b098e94e44b8e1ebad547a975, type: 3}
       propertyPath: m_RootOrder
       value: 3

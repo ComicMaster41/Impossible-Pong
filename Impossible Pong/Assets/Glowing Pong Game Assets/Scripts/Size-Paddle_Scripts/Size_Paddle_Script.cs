@@ -11,13 +11,13 @@ public class Size_Paddle_Script : MonoBehaviour
     void Start()
     {
         player_1 = GameObject.Find("Player 1").GetComponent<Transform>();
-        player_2 = GameObject.Find("Player 2_Split").GetComponent<Transform>();
+        player_2 = GameObject.Find("Player_2_Size").GetComponent<Transform>();
 
         opponent = GameObject.Find("Opponent").GetComponent<Transform>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.name == "Right Border")
+        if (collision.gameObject.tag == "Right Border")
         {
             StartCoroutine(Increase_Paddle_Player2());
             StartCoroutine(Increase_Paddle_Opponent());
@@ -25,7 +25,7 @@ public class Size_Paddle_Script : MonoBehaviour
 
         }
 
-        else if (collision.gameObject.name == "Left Border")
+        else if (collision.gameObject.tag == "Left Border")
         {
             StartCoroutine(Increase_Paddle_Player1());
             StartCoroutine(Decrease_Paddle_Player2());
