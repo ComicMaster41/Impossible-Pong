@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Size_Paddle_Script : MonoBehaviour
 {
     public Transform player_1;
     public Transform player_2;
     public Transform opponent;
+
+    private float smallest_paddle_size = 2.980232e-08f;
 
     void Start()
     {
@@ -66,18 +69,28 @@ public class Size_Paddle_Script : MonoBehaviour
         // scale of object is added with a new vector 3
         player_1.transform.localScale += new Vector3(0.2F, 0.2f, 0);
         yield return new WaitForSeconds(0);
+
+        if (player_1.transform.localScale == new Vector3(smallest_paddle_size, smallest_paddle_size, 1)){
+            SceneManager.LoadScene(2);
+        }
     }
 
     public IEnumerator Decrease_Paddle_Player2(){
         player_2.transform.localScale += new Vector3(0.2F, 0.2f, 0);
         yield return new WaitForSeconds(0);
-
+        if (player_2.transform.localScale == new Vector3(smallest_paddle_size, smallest_paddle_size, 1))
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 
     public IEnumerator Decrease_Paddle_Opponent()
     {
         opponent.transform.localScale += new Vector3(0.2F, 0.2f, 0);
         yield return new WaitForSeconds(0);
-
+        if (opponent.transform.localScale == new Vector3(smallest_paddle_size, smallest_paddle_size, 1))
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }

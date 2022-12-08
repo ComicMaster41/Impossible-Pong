@@ -386,6 +386,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 979438481}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: MoveToScene
@@ -519,6 +531,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 979438481}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: MoveToScene
@@ -827,7 +851,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 178793328}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 0
 --- !u!114 &178793328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1307,6 +1343,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 979438481}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: MoveToScene
@@ -2414,6 +2462,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &590953133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2874,7 +2934,6 @@ GameObject:
   m_Component:
   - component: {fileID: 752790985}
   - component: {fileID: 752790987}
-  - component: {fileID: 752790986}
   m_Layer: 0
   m_Name: Background_Music
   m_TagString: Untagged
@@ -2896,18 +2955,6 @@ Transform:
   m_Father: {fileID: 1151528390}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &752790986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 752790984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d68bfe1d939554cf8a0a242ae4f20af1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &752790987
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2918,7 +2965,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 337f303c78afd4040848d897d492f3e3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d8d561bface1a4f30bd49ca3a21c5b76, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3191,6 +3238,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4715,6 +4774,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1184985701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6009,7 +6080,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1392053907}
   - component: {fileID: 1392053909}
-  - component: {fileID: 1392053908}
   m_Layer: 0
   m_Name: Background_Music
   m_TagString: Untagged
@@ -6031,18 +6101,6 @@ Transform:
   m_Father: {fileID: 909253289}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1392053908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392053906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d68bfe1d939554cf8a0a242ae4f20af1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1392053909
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6053,7 +6111,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 337f303c78afd4040848d897d492f3e3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d8d561bface1a4f30bd49ca3a21c5b76, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -6250,7 +6308,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1429661644}
   - component: {fileID: 1429661646}
-  - component: {fileID: 1429661645}
   m_Layer: 0
   m_Name: Background_Music
   m_TagString: Untagged
@@ -6272,18 +6329,6 @@ Transform:
   m_Father: {fileID: 994068685}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1429661645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429661643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d68bfe1d939554cf8a0a242ae4f20af1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1429661646
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6294,7 +6339,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 337f303c78afd4040848d897d492f3e3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d8d561bface1a4f30bd49ca3a21c5b76, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -7251,6 +7296,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 979438481}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: MoveToScene
@@ -7780,7 +7837,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1669140237}
   - component: {fileID: 1669140236}
-  - component: {fileID: 1669140235}
   m_Layer: 0
   m_Name: Background_Music
   m_TagString: Untagged
@@ -7788,18 +7844,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1669140235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1669140234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d68bfe1d939554cf8a0a242ae4f20af1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1669140236
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7810,9 +7854,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 080c877616e6d46b186193b61298c501, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d8d561bface1a4f30bd49ca3a21c5b76, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8162,7 +8206,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1722213725}
   - component: {fileID: 1722213727}
-  - component: {fileID: 1722213726}
   m_Layer: 0
   m_Name: Background_Music
   m_TagString: Untagged
@@ -8184,18 +8227,6 @@ Transform:
   m_Father: {fileID: 27133828}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1722213726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722213724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d68bfe1d939554cf8a0a242ae4f20af1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1722213727
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8206,7 +8237,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 337f303c78afd4040848d897d492f3e3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d8d561bface1a4f30bd49ca3a21c5b76, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -8302,7 +8333,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1723227831}
   - component: {fileID: 1723227830}
-  - component: {fileID: 1723227829}
   m_Layer: 0
   m_Name: Intro_Background_Music
   m_TagString: Untagged
@@ -8310,18 +8340,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1723227829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723227828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d68bfe1d939554cf8a0a242ae4f20af1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1723227830
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8334,7 +8352,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8bddebaf05a4646ec9ff156bfe9be9fa, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.718
+  m_Volume: 0.897
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8645,6 +8663,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1747867733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8907,6 +8937,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 979438481}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: MoveToScene
@@ -9057,6 +9099,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1723227830}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
