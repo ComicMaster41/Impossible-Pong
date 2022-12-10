@@ -7814,6 +7814,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8792109680042102111, guid: 6046391aaf10f440796c00a58c333f00, type: 3}
+      propertyPath: extraSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792109680042102111, guid: 6046391aaf10f440796c00a58c333f00, type: 3}
+      propertyPath: startSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792109680042102111, guid: 6046391aaf10f440796c00a58c333f00, type: 3}
+      propertyPath: maxExtraSpeed
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -2273729164867565963, guid: 6046391aaf10f440796c00a58c333f00, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6046391aaf10f440796c00a58c333f00, type: 3}
@@ -8879,7 +8891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 545888664}
-  skill: 0.5
+  skill: 0.75
 --- !u!1 &1842065131
 GameObject:
   m_ObjectHideFlags: 0
