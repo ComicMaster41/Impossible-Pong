@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Glowing Pong Game Assets/Scenes/ImpossiblePong.unity
-    guid: 00189b194b3b34bab8f3a20b94a6a2bf
+    path: Assets/MainGame/Scenes/MobileGameScenes/ImpossiblePong_mobile.unity
+    guid: f1115d761d41a4a3eaa860499f4d18df
   - enabled: 1
-    path: Assets/Glowing Pong Game Assets/Scenes/ImpossiblePong_switched_menu.unity
-    guid: da14c213a178e4ad0a55479d1686ea14
+    path: Assets/MainGame/Scenes/MobileGameScenes/ImpossiblePong_switched_menu_mobile.unity
+    guid: 75f76c2cb35c74dac9d47a7c1e742c22
   - enabled: 1
-    path: Assets/Glowing Pong Game Assets/Scenes/GameOver.unity
+    path: Assets/MainGame/Scenes/GameOver.unity
     guid: 73016e885cd78499a9451950dd8a1433
   m_configObjects: {}

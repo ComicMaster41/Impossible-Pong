@@ -22,7 +22,7 @@ public class MainMenu_Script : MonoBehaviour
 
     public ActivationScript reg_p2_opp_act;
     public ActivationScript split_p2_opp_act;
-    public ActivationScript multiply_p2_opp_act;
+    public ActivationScript_Mult multiply_p2_opp_act;
     public ActivationScript impossible_p2_opp_act;
     public ActivationScript size_p2_opp_act;
 
