@@ -18,6 +18,9 @@ TagManager:
   - Split_Opponent
   - Opponent_1
   - Opponent_2
+  - test
+  - Mac
+  - Ios
   layers:
   - Default
   - TransparentFX

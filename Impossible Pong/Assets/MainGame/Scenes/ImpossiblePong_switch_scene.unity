@@ -5264,11 +5264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1133873280ce4b05b6ac6321c7e75c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 0}
-  pos: {x: 0, y: 0}
-  minY: -10
-  maxY: 10
-  current_pos: 0
 --- !u!114 &938260399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5935,11 +5930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1133873280ce4b05b6ac6321c7e75c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 0}
-  pos: {x: 0, y: 0}
-  minY: -10
-  maxY: 10
-  current_pos: 0
 --- !u!114 &1012155985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6708,11 +6698,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1133873280ce4b05b6ac6321c7e75c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 0}
-  pos: {x: 0, y: 0}
-  minY: -10
-  maxY: 10
-  current_pos: 0
 --- !u!114 &1113810664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10945,11 +10930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1133873280ce4b05b6ac6321c7e75c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 0}
-  pos: {x: 0, y: 0}
-  minY: -10
-  maxY: 10
-  current_pos: 0
 --- !u!114 &1640379365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14632,11 +14612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1133873280ce4b05b6ac6321c7e75c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 0}
-  pos: {x: 0, y: 0}
-  minY: -10
-  maxY: 10
-  current_pos: 0
 --- !u!1001 &2369213498002159799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15876,11 +15851,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1133873280ce4b05b6ac6321c7e75c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 0}
-  pos: {x: 0, y: 0}
-  minY: -10
-  maxY: 10
-  current_pos: 0
 --- !u!114 &6043895312260657610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15941,11 +15911,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1133873280ce4b05b6ac6321c7e75c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidBody: {fileID: 0}
-  pos: {x: 0, y: 0}
-  minY: -10
-  maxY: 10
-  current_pos: 0
 --- !u!212 &6124525760364556033
 SpriteRenderer:
   m_ObjectHideFlags: 0

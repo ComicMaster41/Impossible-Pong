@@ -11,6 +11,8 @@ public class MainMenu_Script : MonoBehaviour
     [SerializeField] GameObject pong_regular;
     // Split
     [SerializeField] GameObject split_pong;
+
+    [SerializeField] GameObject split_pong_ios;
     // Multiply
     [SerializeField] GameObject multiply_pong;
     // Size
@@ -18,10 +20,14 @@ public class MainMenu_Script : MonoBehaviour
     // Impossible
     [SerializeField] GameObject impossible_pong;
 
+    // grab question object
+    [SerializeField] GameObject Query;
+
     // vars that grab the act script on the game mode
 
     public ActivationScript reg_p2_opp_act;
     public ActivationScript split_p2_opp_act;
+    public ActivationScript split_p2_opp_act_ios;
     public ActivationScript_Mult multiply_p2_opp_act;
     public ActivationScript impossible_p2_opp_act;
     public ActivationScript size_p2_opp_act;
@@ -33,6 +39,10 @@ public class MainMenu_Script : MonoBehaviour
     // grabbing bools of the images
     private bool opp_image_bool = false;
     private bool p2_image_bool = false;
+
+    // grabbing bool of the questions being asked [query]s
+    public bool ios_answer = false;
+    public bool mac_answer = false;
 
     // func() that sets a bool as true/false depending on what is clicked
 
@@ -76,9 +86,23 @@ public class MainMenu_Script : MonoBehaviour
     // Split Pong
     public void SplitScene()
     {
-        canvas.GetComponent<Canvas>().enabled = false;
+        Query.SetActive(true);
 
-        split_pong.SetActive(true);
+        // maybe we need to grab two act scripts for this game mode???
+
+        if (gameObject.CompareTag("Mac"))
+        {
+            canvas.GetComponent<Canvas>().enabled = false;
+
+            split_pong.SetActive(true);
+        }
+
+        else if (gameObject.CompareTag("Ios"))
+        {
+            canvas.GetComponent<Canvas>().enabled = false;
+
+            split_pong_ios.SetActive(true);
+        }
     }
 
     // Multiply Pong
@@ -118,6 +142,9 @@ public class MainMenu_Script : MonoBehaviour
         split_p2_opp_act.player2_active = true;
         split_p2_opp_act.opponent_active = false;
 
+        split_p2_opp_act_ios.player2_active = true;
+        split_p2_opp_act_ios.opponent_active = false;
+
         multiply_p2_opp_act.player2_active = true;
         multiply_p2_opp_act.opponent_active = false;
 
@@ -139,6 +166,9 @@ public class MainMenu_Script : MonoBehaviour
 
         split_p2_opp_act.opponent_active = true;
         split_p2_opp_act.player2_active = false;
+
+        split_p2_opp_act_ios.opponent_active = true;
+        split_p2_opp_act_ios.player2_active = false;
 
         size_p2_opp_act.player2_active = false;
         size_p2_opp_act.opponent_active = true;

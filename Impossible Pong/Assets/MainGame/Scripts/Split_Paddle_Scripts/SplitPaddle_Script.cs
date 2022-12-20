@@ -19,6 +19,8 @@ public class SplitPaddle_Script : MonoBehaviour
     //public GameObject split_opponent_paddle1;
     //public GameObject split_opponent_paddle2;
 
+    public bool active = false;
+
     private void Start()
     {
         // grabs renderer of both the player 2 and opponent
@@ -51,6 +53,7 @@ public class SplitPaddle_Script : MonoBehaviour
 
             pre_state_paddle.SetActive(false);
             split_paddle1.SetActive(true);
+            active = true;
 
         }
 

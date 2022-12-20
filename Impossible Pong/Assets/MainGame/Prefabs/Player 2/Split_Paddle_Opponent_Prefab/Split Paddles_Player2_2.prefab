@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1255532489565770112}
   - component: {fileID: 1255532489565770118}
   - component: {fileID: 1255532489565770113}
+  - component: {fileID: 4231493375393761572}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 2
   m_TagString: Player 2_2
@@ -145,6 +146,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   racketSpeed: -7
+--- !u!114 &4231493375393761572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255532489565770125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f6161079894ba7bcff1b671e4d2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1486437448353838852
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +171,7 @@ GameObject:
   - component: {fileID: 2755567407954890019}
   - component: {fileID: 1288688148468986087}
   - component: {fileID: 6387851879801493970}
+  - component: {fileID: 6520453459766834461}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 4
   m_TagString: Player 2_2
@@ -290,6 +304,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   racketSpeed: -7
+--- !u!114 &6520453459766834461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486437448353838852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f6161079894ba7bcff1b671e4d2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4556257939775929604
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +363,7 @@ GameObject:
   - component: {fileID: 1111734096701346262}
   - component: {fileID: 8047972948687039862}
   - component: {fileID: 2493937262146373469}
+  - component: {fileID: 2852414837864177527}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 3
   m_TagString: Player 2_2
@@ -469,6 +496,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   racketSpeed: 7
+--- !u!114 &2852414837864177527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7494156581928661150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f6161079894ba7bcff1b671e4d2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7543717196741267874
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +521,7 @@ GameObject:
   - component: {fileID: 7543717196741267887}
   - component: {fileID: 7543717196741267881}
   - component: {fileID: 7543717196741267886}
+  - component: {fileID: 6402240333188624650}
   m_Layer: 0
   m_Name: Split_Opponent_Paddle 1
   m_TagString: Player 2_2
@@ -614,3 +654,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   racketSpeed: 7
+--- !u!114 &6402240333188624650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7543717196741267874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f6161079894ba7bcff1b671e4d2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

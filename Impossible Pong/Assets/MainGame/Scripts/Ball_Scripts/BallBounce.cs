@@ -12,6 +12,8 @@ public class BallBounce : MonoBehaviour
 
     private void Bounce(Collision2D collision)
     {
+        Handheld.Vibrate();
+
         Vector3 ballPosition = transform.position;
         Vector3 racketPosition = collision.transform.position;
         float racketHeight = collision.collider.bounds.size.y;
@@ -56,6 +58,8 @@ public class BallBounce : MonoBehaviour
             ballMovement.player1Start = false;
             StartCoroutine(ballMovement.Launch());
         }
+
+        Handheld.Vibrate();
 
         Instantiate(hitSFX, transform.position, transform.rotation);
     }
