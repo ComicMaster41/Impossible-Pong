@@ -23,6 +23,8 @@ public class MainMenu_Script : MonoBehaviour
     // grab question object
     [SerializeField] GameObject Query;
 
+    [SerializeField] GameObject query_opponent;
+
     // vars that grab the act script on the game mode
 
     public ActivationScript reg_p2_opp_act;
@@ -37,14 +39,25 @@ public class MainMenu_Script : MonoBehaviour
     public Image p2_image;
 
     // grabbing bools of the images
-    private bool opp_image_bool = false;
-    private bool p2_image_bool = false;
+    public bool opp_image_bool = false;
+    public bool p2_image_bool = false;
 
     // grabbing bool of the questions being asked [query]s
     public bool ios_answer = false;
     public bool mac_answer = false;
 
     // func() that sets a bool as true/false depending on what is clicked
+
+    // grab the funny text
+    [SerializeField] GameObject funnyText;
+
+    private void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            funnyText.SetActive(true);
+        }
+    }
 
     public void Opp_and_p2_visibility_image()
     {
@@ -78,55 +91,111 @@ public class MainMenu_Script : MonoBehaviour
     // Regular Pong
     public void PongScene()
     {
-        canvas.GetComponent<Canvas>().enabled = false;
 
-        pong_regular.SetActive(true);
+        if (opp_image_bool == false && p2_image_bool == false)
+        {
+            query_opponent.SetActive(true);
+        }
+
+        else
+        {
+            query_opponent.SetActive(false);
+            canvas.GetComponent<Canvas>().enabled = false;
+
+            pong_regular.SetActive(true);
+        }
     }
 
     // Split Pong
     public void SplitScene()
     {
-        Query.SetActive(true);
+
 
         // maybe we need to grab two act scripts for this game mode???
 
-        if (gameObject.CompareTag("Mac"))
+        if (opp_image_bool == false && p2_image_bool == false)
         {
-            canvas.GetComponent<Canvas>().enabled = false;
-
-            split_pong.SetActive(true);
+            query_opponent.SetActive(true);
         }
 
-        else if (gameObject.CompareTag("Ios"))
+        else
         {
-            canvas.GetComponent<Canvas>().enabled = false;
+            query_opponent.SetActive(false);
+            Query.SetActive(true);
 
-            split_pong_ios.SetActive(true);
+            if (gameObject.CompareTag("Mac"))
+            {
+                canvas.GetComponent<Canvas>().enabled = false;
+
+                split_pong.SetActive(true);
+            }
+
+            else if (gameObject.CompareTag("Ios"))
+            {
+                canvas.GetComponent<Canvas>().enabled = false;
+
+                split_pong_ios.SetActive(true);
+            }
+
         }
     }
 
     // Multiply Pong
     public void MultiplyScene()
     {
-        canvas.GetComponent<Canvas>().enabled = false;
+        if (opp_image_bool == false && p2_image_bool == false)
+        {
+            query_opponent.SetActive(true);
+        }
 
-        multiply_pong.SetActive(true);
+        else
+        {
+            canvas.GetComponent<Canvas>().enabled = false;
+
+            multiply_pong.SetActive(true);
+            query_opponent.SetActive(false);
+
+        }
+
     }
 
     // Size Pong
     public void SizeScene()
     {
-        canvas.GetComponent<Canvas>().enabled = false;
+        if (opp_image_bool == false && p2_image_bool == false)
+        {
+            query_opponent.SetActive(true);
+        }
 
-        size_pong.SetActive(true);
+        else
+        {
+            canvas.GetComponent<Canvas>().enabled = false;
+
+            size_pong.SetActive(true);
+
+            query_opponent.SetActive(false);
+
+        }
     }
 
     // Imposible Pong
     public void ImpossibleScene()
     {
-        canvas.GetComponent<Canvas>().enabled = false;
 
-        impossible_pong.SetActive(true);
+        if (opp_image_bool == false && p2_image_bool == false)
+        {
+            query_opponent.SetActive(true);
+        }
+
+        else
+        {
+            canvas.GetComponent<Canvas>().enabled = false;
+
+            impossible_pong.SetActive(true);
+
+            query_opponent.SetActive(false);
+        }
+
     }
 
     // enable/disaable the player or opponnet based on button click

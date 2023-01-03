@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/MainGame/Scenes/ImpossiblePong.unity
     guid: 112f1f711059a4edcb5d2d4214dd4f36
   - enabled: 1
-    path: Assets/MainGame/Scenes/ImpossiblePong_switch_scene.unity
-    guid: 8f641c33483e7467a919c77b57e3cd98
+    path: Assets/MainGame/Scenes/ImpossiblePong_switch_menu.unity
+    guid: 862295620051540e983373f68622f708
   - enabled: 1
     path: Assets/MainGame/Scenes/GameOver.unity
     guid: 73016e885cd78499a9451950dd8a1433

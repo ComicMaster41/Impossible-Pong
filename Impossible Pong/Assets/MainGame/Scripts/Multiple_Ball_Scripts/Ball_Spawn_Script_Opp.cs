@@ -41,20 +41,16 @@ public class Ball_Spawn_Script_Opp : MonoBehaviour
         if (collision.gameObject.name == "Left Border" && ball_counter == 0)
         {
             ball_multiplied = true;
-            ball_counter++;
-        }
-
-        else if (collision.gameObject.name == "Left Border" && ball_counter == 1)
-        {
             opponent_1.SetActive(true);
             ball_1.SetActive(true);
             ball_counter++;
         }
 
-        else if (collision.gameObject.name == "Left Border" && ball_counter == 2)
+        else if (collision.gameObject.name == "Left Border" && ball_counter == 1)
         {
             opponent_2.SetActive(true);
             ball_2.SetActive(true);
+            ball_counter++;
         }
 
         // reverse logic

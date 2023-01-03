@@ -8,6 +8,9 @@ public class Ball_Spawn_Script_P2 : MonoBehaviour
 
     public GameObject ball_2;
 
+    public GameObject opp_1;
+    public GameObject opp_2;
+
     //public BallMovement ballMovement;
 
     public int ball_counter = 0;
@@ -20,8 +23,8 @@ public class Ball_Spawn_Script_P2 : MonoBehaviour
     {
         // set the opponents and the balls to false
 
-        ball_1.SetActive(false);
-        ball_2.SetActive(false);
+        opp_1.SetActive(false);
+        opp_2.SetActive(false);
     }
 
 
@@ -30,43 +33,31 @@ public class Ball_Spawn_Script_P2 : MonoBehaviour
         // if ball_count is greater than ball_limiter --> spawn
         // begin launch/reset function
         //StartCoroutine(ballMovement.Launch());
-        if (collision.gameObject.name == "Left Border" && ball_counter == 0)
+        if (ball_counter == 0 && collision.gameObject.name == "Left Border")
         {
-            ball_multiplied = true;
+            //ball_1.SetActive(true);
+            Instantiate(ball_1);
             ball_counter++;
         }
 
-        else if (collision.gameObject.name == "Left Border" && ball_counter == 1)
+        else if (ball_counter == 1 && collision.gameObject.name == "Left Border")
         {
-            ball_1.SetActive(true);
-            ball_counter++;
+            Destroy(ball_1);
+            Instantiate(ball_2);
         }
 
-        else if (collision.gameObject.name == "Left Border" && ball_counter == 2)
-        {
-            ball_2.SetActive(true);
-        }
+        //if (ball_counter == 0 && collision.gameObject.name == "Right Border")
+        //{
+        //    ball_1.SetActive(true);
+        //    ball_multiplied = true;
+        //    ball_counter++;
+        //}
 
-        // reverse logic
-        if (collision.gameObject.name == "Right Border" && ball_counter == 0)
-        {
-            return;
-        }
+        //else if (ball_counter == 1 && collision.gameObject.name == "Right Border")
+        //{
+        //    ball_2.SetActive(true);
+        //    ball_counter++;
+        //}
 
-        // if counter 1, set ball 1 false and ball 0 true
-        // if counter 2, set ball 2 false and ball 1 true
-
-        else if (collision.gameObject.name == "Right Border" && ball_counter == 1)
-        {
-            ball_1.SetActive(false);
-            ball_counter--;
-        }
-
-        else if (collision.gameObject.name == "Right Border" && ball_counter == 2)
-        {
-            ball_1.SetActive(true);
-            ball_counter--;
-            ball_2.SetActive(false);
-        }
     }
 }
