@@ -29,7 +29,7 @@ public class Ball_Spawn_Script_Opp : MonoBehaviour
         opponent_1.SetActive(false);
         opponent_2.SetActive(false);
 
-        StartCoroutine(ballMovement.Launch());
+        //StartCoroutine(ballMovement.Launch());
     }
 
 
@@ -58,9 +58,6 @@ public class Ball_Spawn_Script_Opp : MonoBehaviour
         {
             return;
         }
-
-        // if counter 1, set ball 1 false and ball 0 true
-        // if counter 2, set ball 2 false and ball 1 true
 
         else if (collision.gameObject.name == "Right Border" && ball_counter == 1)
         {

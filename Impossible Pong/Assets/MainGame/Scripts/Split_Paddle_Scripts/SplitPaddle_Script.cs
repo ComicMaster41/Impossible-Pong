@@ -93,10 +93,6 @@ public class SplitPaddle_Script : MonoBehaviour
             split_paddle2.SetActive(true);
         }
 
-        // ISSUE: it is reading line 83 before, 89 and thus that is why it is activating the player 2
-        // instead of opponent
-
-        // SOLUTION: I need to make these if statements check which is activated
 
         else if (collision.gameObject.CompareTag("Player 2_1"))
         {
@@ -109,38 +105,44 @@ public class SplitPaddle_Script : MonoBehaviour
 
         // player detection
 
-        else if (collision.gameObject.CompareTag("Right Border") && split_paddle1.activeSelf)
+        else if (collision.gameObject.CompareTag("Left Border") && split_paddle1.activeSelf)
         {
             // if player scores a point --> put them back a state
             split_paddle1.SetActive(false);
             pre_state_paddle.SetActive(true);
+            Debug.Log("this works");
         }
 
-        else if (collision.gameObject.CompareTag("Right Border") && split_paddle2.activeSelf)
+        else if (collision.gameObject.CompareTag("Left Border") && split_paddle2.activeSelf)
         {
 
             // if player scores a point --> put them back a state
             split_paddle2.SetActive(false);
             split_paddle1.SetActive(true);
+            Debug.Log("this works");
         }
 
         // p2 detection
 
-        else if (collision.gameObject.CompareTag("Left Border") && split_p2_paddle1.activeSelf)
+        else if (collision.gameObject.CompareTag("Right Border") && split_p2_paddle1.activeSelf)
         {
             // if player scores a point --> put them back a state
 
             split_p2_paddle1.SetActive(false);
             pre_state_p2_renderer.enabled = true;
             pre_state_p2_collider.enabled = true;
+
         }
 
-        else if (collision.gameObject.CompareTag("Left Border") && split_p2_paddle2.activeSelf)
+        else if (collision.gameObject.CompareTag("Right Border") && split_p2_paddle2.activeSelf)
         {
             // if player scores a point --> put them back a state
             split_p2_paddle2.SetActive(false);
             split_p2_paddle1.SetActive(true);
+
         }
+
+        // only if you want to include opponent to be split
 
         //else if (collision.gameObject.CompareTag("Left Border") && split_opponent_paddle1.activeSelf)
         //{
